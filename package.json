@@ -1,6 +1,6 @@
 {
-  "name": "{{ componentName }}-bridge",
-  "version": "1.0.0",
+  "name": "{{ bridgeName }}",
+  "version": "{{ version }}",
   "description": "",
   "module": "lib/index.es.js",
   "main": "lib/index.cjs.js",
