@@ -6,7 +6,7 @@
   "main": "lib/index.cjs.js",
   "types": "lib",
   "scripts": {
-    "build": "standard-version && npx rimraf lib && npx mkdirp lib && tsc --emitDeclarationOnly && rollup -c"
+    "build": "npx rimraf lib && npx mkdirp lib && tsc --emitDeclarationOnly && rollup -c"
   },
   "keywords": [],
   "author": "",
