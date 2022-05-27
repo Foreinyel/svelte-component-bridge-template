@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useLayoutEffect } from "react";
 const useCustomLayoutEffect =
   typeof window !== "undefined" ? useLayoutEffect : useEffect;
-const load = (function() {
-  return System.import('{{ resourceUrl }}');
+const load = (function () {
+  return System.import("{{ resourceUrl }}");
 })();
 
 export interface BridgeProps {}
@@ -12,7 +12,7 @@ export const Bridge = (props: any) => {
 
   useCustomLayoutEffect(() => {
     load.then((mod: any) => {
-      mod.default(dom.current);
+      mod.mount(dom.current);
     });
   }, []);
 
