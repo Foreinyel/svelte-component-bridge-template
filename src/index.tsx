@@ -12,7 +12,7 @@ export const Bridge = (props: any) => {
 
   useCustomLayoutEffect(() => {
     load.then((mod: any) => {
-      mod.mount(dom.current);
+      mod.mount(dom.current, props);
     });
   }, []);
 
